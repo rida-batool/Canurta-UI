@@ -1,0 +1,27 @@
+.workshow {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 20px 10%;
+}
+
+.workshow li{
+    line-height: 30px;
+}
+
+.workshow h3{
+    font-weight: 300;
+    font-style: italic;
+    margin:0px;
+    font-size: 1.2rem;
+}
+
+.workshow a{
+    color : #2949d8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.workshow a:hover{
+    color: blue;
+}

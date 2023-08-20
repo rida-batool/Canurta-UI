@@ -1,0 +1,52 @@
+.footer-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: whitesmoke;
+  h1 {
+    font-size: 3rem;
+    line-height: 20px;
+    color: white;
+  }
+  h2 {
+    font-size: 1.5rem;
+    overflow: hidden;
+    color: white;
+    @include media(">=phone", "<lgphone") {
+      display: none;
+    }
+    @include media(">=lgphone", "<tablet") {
+      font-size: 14px;
+    }
+    @include media(">=tablet", "<desktop"){
+      font-size: 1.2rem;
+    }
+  }
+  .email-link {
+    font-size: 1.5rem;
+    color: white;
+  }
+  .social-icons {
+    margin-top: 20px;
+    img {
+      height: 2rem;
+      margin: 10px;
+      filter: brightness(0) invert(1);
+    }
+  }
+  p {
+    margin-top: 6%;
+    color: rgb(225, 233, 248);
+    @include media(">=phone", "<lgphone") {
+      margin-top: 30%;
+    }
+
+  }
+  icon {
+    color: red;
+  } 
+}

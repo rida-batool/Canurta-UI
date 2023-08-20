@@ -1,0 +1,187 @@
+.work-wrapper {
+  width: 100vw;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  h1 {
+    display: flex;
+    align-self: center;
+    padding:0% 10%;
+    font-size: 3rem;
+    line-height: 50px;
+    @include media(">=phone", "<lgphone") {
+      font-size: 2rem;
+      text-align: center;
+    }
+  }
+
+  .many-more{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    padding: 30px 0 50px 0;
+    align-items: center;
+    width: 230px;
+  }
+
+
+  .screen-shot{
+
+    img{
+      width: 15%;
+    object-fit: contain;
+    position: absolute;
+    z-index: -99;
+    opacity: 0.3;
+    display: flex;
+    overflow: auto;
+    filter: blur(1px);
+      @include media(">=phone", "<lgphone") {
+        width: 45%;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .pic1{
+    
+    transform: rotate(20deg);
+    right: 20%;
+  }
+
+  .pic2{
+    transform: rotate(-20deg);
+    left: 5%;
+  }
+
+  .pic3{
+    transform: rotate(-25deg);
+    right: 23%;
+  }
+
+  .pic4{
+    transform: rotate(30deg);
+    left: 25%;
+  }
+
+  .pic5{
+    transform: rotate(15deg);
+    right: 17%;
+  }
+
+  .pic6{
+    transform: rotate(-40deg);
+    left: 10%;
+  }
+
+
+
+  .grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    @include media(">=phone", "<lgphone") {
+      grid-template-columns: 1fr;
+    }
+    @include media(">=lgphone", "<tablet") {
+      grid-template-columns: 1fr;
+    }
+    @include media(">=tablet", "<desktop") {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+
+.dot-elastic {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #000000;
+  animation: dotElastic 1s infinite linear;
+}
+
+.dot-elastic::before, .dot-elastic::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-elastic::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #000000;
+  animation: dotElasticBefore 1s infinite linear;
+}
+
+.dot-elastic::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #000000;
+  animation: dotElasticAfter 1s infinite linear;
+}
+
+@keyframes dotElasticBefore {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1.5);
+  }
+  50% {
+    transform: scale(1, 0.67);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes dotElastic {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1.5);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes dotElasticAfter {
+  0% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.67);
+  }
+  75% {
+    transform: scale(1, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
