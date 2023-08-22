@@ -15,7 +15,7 @@ const IndexPage = () => (
   <ThemeContextProvider>
     <div>
     <Layout>
-    <SEO title="Abdullah Sumbal" />
+    <SEO title="Rida Batool" />
     <Header></Header>
    {/*  <Work></Work> */}
     {/* <About></About>

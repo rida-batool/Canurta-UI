@@ -26,7 +26,7 @@ export default {
   //Change The Website Template
 
   //   Header Details ---------------------
-  name: "Abdullah Sumbal",
+  name: "Rida Batool",
   headerTagline: [
     //Line 1 For Header
     "Building digital",
@@ -37,10 +37,10 @@ export default {
   ],
   //   Header Paragraph
   headerParagraph:
-    "I am a Software Engineer at Citi Bank and I make awesome stuff.",
+    "I am a Fullstack Software Developer and I make awesome stuff.",
 
   //Contact Email
-  contactEmail: "abdullahsumbal@gmail.com",
+  contactEmail: "ridabatool.be13@gmail.com",
 
   // End Header Details -----------------------
 
@@ -204,7 +204,7 @@ export default {
   contactSubHeading: "Let's create your next experience together",
   social: [
     // Add Or Remove The Link Accordingly
-    { img: githubIcon, url: "https://github.com/abdullahsumbal" },
+    { img: githubIcon, url: "https://github.com/rida-batool" },
   ],
 
   // End Contact Section ---------------

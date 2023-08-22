@@ -27,7 +27,7 @@ const Footer = () => {
             ))}
           </div>
           <p className = {"byname"}>
-            Made by Abdullah Sumbal
+            Made by Rida Batool
           </p>
         </div>
       </div>
